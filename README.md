@@ -22,7 +22,7 @@ Run the following commands to install the dependencies:
 ```bash
 conda create -n f-rag python=3.10
 conda activate f-rag
-pip install safe-mol==0.1.5 transformers==4.38.2 pandas==2.0 scikit-learn==1.0.2 numpy==1.25 PyTDC==0.4.1 easydict==1.12
+pip install accelerate==0.28.0 safe-mol==0.1.5 transformers==4.38.2 pandas==2.0 scikit-learn==1.0.2 numpy==1.25 PyTDC==0.4.1 easydict==1.12
 conda install -c conda-forge openbabel  # required to run the docking experiments
 ```
 
