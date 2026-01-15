@@ -135,6 +135,9 @@ class MolSlicer:
 
         # CASE 3: we select the most plausible bond to cut on ourselves
         choice = self._bond_selection_from_max_cuts(candidate_bonds, dist_mat)
+        if choice[0] == choice[1]:
+            return (mol, None, None)
+        
         selected_bonds = [selected_bonds[c] for c in choice]
         return self._fragment_mol(mol, selected_bonds)
     
